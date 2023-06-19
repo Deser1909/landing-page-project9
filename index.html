@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-1">
+                <p class="logo"><strong>Floral Haven</strong></p>
+                <p class="title">Nature <br />Art</p>
+            </div>
+            <div class="nav-2">
+                <p class="menu-btn"><strong>Menu</strong></p>
+                <p class="pattern">X</p>
+            </div>
+            <div class="nav-3">
+                <p class="intro"><strong>Intro</strong></p>
+                <p class="pattern-2">XX</p>
+            </div>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="col-1 col">
+                <div class="header">
+                    <h1>Paintings Inspired by <br /> Nature's Palette</h1>
+                </div>
+                <div class="numbers">
+                    <p>always</p>
+                    <div class="hr"></div>
+                    <p>2023</p>
+                </div>
+                <div class="hero-img">
+                    <img src="https://images.unsplash.com/photo-1579783902915-f0b0de2c2eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80" alt="">
+                </div>
+                <div class="hero-img-info">
+                    <p> Creator: Jan Davidsz de Heem.</p>
+                    <p> Date: 1660 - 1650.</p>
+                    <p> Providing Country: Netherlands.</p>
+                </div>
+                <div class="cta">
+                    <div class="ctn-btn">
+                        <h3>Next Painting <ion-icon name="arrow-forward-sharp"></ion-icon></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col">
+                <div class="p-info">
+                    <p>1670</p>
+                    <p>Arts & Culture</p>
+                </div>
+                <div class="p-img">
+                    <div class="p-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=745&q=80" alt="">
+                    </div>
+                    <div class="p-img-border"></div>
+                </div>
+                <div class="img">
+                    <div class="img-data">
+                        <div class="img-name">
+                            <p>Flowers in a <br>Metal Vase</p>
+                        </div>
+                        <div class="img-info">
+                            <p> Creator: Abraham Mignon.</p>
+                            <p> Providing Country: Netherlands.</p>
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="price">
+                        <p>price</p>
+                        <p id="amount">$59.00</p>
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <div class="arrow">
+                        <ion-icon name="chevron-back-sharp"></ion-icon>
+                    </div>
+                    <p>next</p>
+                    <div class="arrow">
+                        <ion-icon name="chevron-forward-sharp"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        gsap.from(".nav-1, .nav-2, .nav-3", 2, {
+            scale: 0,
+            ease: "power3.inOut",
+            delay: 1.5,
+            stagger: {
+                amount: 0.5,
+            },
+        });
+
+        gsap.from(".col-1, .col-2", 1, {
+			scale: 0,
+			ease: "power3.inOut",
+			delay: 2,
+		});
+    </script>
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
